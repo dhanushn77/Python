@@ -1,3 +1,3 @@
 # Python
 
-print("hello world")
+100 days of Learning python with the projects
