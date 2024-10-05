@@ -91,8 +91,114 @@ selected_row[horizontal-1]="X"
 
 # 🚨 Don't change the code below 👇
 print(f"{row1}\n{row2}\n{row3}")
+#------------------------------------------------------------------------------------------------------------------
+#Rock paper scissor Game
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
 
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
 
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+out=int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+rock=0
+paper=1
+scissors=2
+rdm=random.randint(0,2)
+print(f"computer played {rdm}")
+print(f"you choose {out}")
+if rdm==rock:
+    print('''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+''')
+elif rdm==paper:
+    print('''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''')
+else:
+    print('''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+''')
+    
+if out==0:
+     print('''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+''')
+elif out==1:
+    print('''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''')
+else:
+    print('''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+''')
+
+if (rdm==0 and out==1 or rdm==0 and out==2):
+    print("you win")
+elif(rdm==1 and out==0):
+    print("computer wins")
+elif(rdm==1 and out==2):
+    print("you win")
+elif(rdm==2 and out==0):
+    print("you win")
+elif(rdm==2 and out==1):
+    print("computer wins")
+elif(out>=3):
+    print("invalid entry so u loose")
+else:
+    print("draw")
+
+#---------------------------------------------------------------------------------------------------------------------
 
 
 
